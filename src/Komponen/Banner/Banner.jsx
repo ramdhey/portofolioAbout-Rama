@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 import { Container, Row, Col } from 'react-bootstrap'
-import { CloudArrowDown } from "react-bootstrap-icons";
-import Button from 'react-bootstrap/Button';
+import { CloudArrowDown } from "react-bootstrap-icons"
+import Button from 'react-bootstrap/Button'
+import Image from 'react-bootstrap/Image'
 
 
 import head from './image/head.png'
+import foto from './image/profile.jpg'
 
 
 export const Banner = () => {
@@ -60,8 +62,10 @@ export const Banner = () => {
 
                         </span>
 
+                        
                         <h1>{`Hi I'm `}</h1>
-                        <h2 className="mb-5">{`Rama Dhea Yudhistira`}</h2>
+                        <h2 className="mb-5 rama">{`Rama Dhea Yudhistira`}</h2>
+                        <h1><img src={foto} style={{width:"410px",height:"500px" ,borderRadius:"70%"}}></img></h1>
                         <h4><span className="wrap">{text}</span></h4>
 
                         <p className="intro mt-3 text-white">
@@ -74,7 +78,7 @@ export const Banner = () => {
                     </Col>
                     <Col xs={12} md={6} xl={6}>
 
-                        <img src={head} alt="head" />
+                        <img src={head} className="head" alt="head" />
                     </Col>
                 </Row>
             </Container>

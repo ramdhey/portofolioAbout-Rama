@@ -255,7 +255,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  box-shadow : 0px 0px 10px #2081ffda !important;
 }
+
+
+.banner .rama{
+  box-shadow : 2px 0px 10px #2081ffda !important;
+  background-color: #0d5dc5;
+}
+
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -289,7 +298,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.banner .head {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
