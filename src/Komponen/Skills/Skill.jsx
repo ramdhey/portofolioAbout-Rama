@@ -4,6 +4,19 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+import seratus from './image/100%.png'
+import nintyfif from './image/95.png'
+import ninty from './image/90.png'
+import egtifif from './image/85.png'
+import egti from './image/80.png'
+import svnfif from './image/75.png'
+import svn from './image/70.png'
+import sixfif from './image/65.png'
+import six from './image/60.png'
+import fif from './image/50.png'
+import fofif from './image/45.png'
+import color from './image/color-sharp.png'
+
 
 export const Skill = () => {
     const responsive = {
@@ -29,29 +42,49 @@ export const Skill = () => {
 
 
     return (
-        <section className="skil" id="skills">
+        <section className="skill" id="skills">
             <Container>
                 <Row>
-                    <Col>
-                        <div className="skill-bx">
+                    <Col xs={12} md={12} xl={12}>
+                        <div className="skill-box" style={{ backgroundImage: 'linear-gradient(#b9098d80,#2A7CC0,#11044b80)' }}>
                             <h2>Skills</h2>
-                            <p>Text</p>
-                            <Carousel responsive={responsive} infinite={true} className='skill-slider'>
-                                <div className="itemnya">
-                                    <img src={""} alt='gambarnya' />
-                                    <h5>Web Dev</h5>
+                            
+                            <Carousel responsive={responsive} infinite={true} className='owl-carousel owl-theme skill-slider '>
+                                <div className="itemnya mt-3">
+                                    <img src={egtifif} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">React JS</h5>
                                 </div>
-                                <div className="itemnya">
-                                    <img src={""} alt='gambarnya' />
-                                    <h5>Game Dev</h5>
+                                <div className="itemnya  mt-3">
+                                    <img src={svnfif} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">Node JS</h5>
                                 </div>
-                                <div className="itemnya">
-                                    <img src={""} alt='gambarnya' />
-                                    <h5>Odoo</h5>
+                                <div className="itemnya  mt-3">
+                                    <img src={egti} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">Express JS</h5>
                                 </div>
-                                <div className="itemnya">
-                                    <img src={""} alt='gambarnya' />
-                                    <h5>UI Ux</h5>
+                                <div className="itemnya  mt-3">
+                                    <img src={egtifif} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">MongoDB</h5>
+                                </div>
+                                <div className="itemnya  mt-3">
+                                    <img src={svn} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">Odoo Python Program</h5>
+                                </div>
+                                <div className="itemnya  mt-3">
+                                    <img src={six} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">Unity Game Programming</h5>
+                                </div>
+                                <div className="itemnya  mt-3">
+                                    <img src={sixfif} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">Android Studio</h5>
+                                </div>
+                                <div className="itemnya  mt-3">
+                                    <img src={egtifif} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">Figma</h5>
+                                </div>
+                                <div className="itemnya  mt-3">
+                                    <img src={svnfif} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">UI UX</h5>
                                 </div>
                             </Carousel>
 
@@ -59,6 +92,7 @@ export const Skill = () => {
                     </Col>
                 </Row>
             </Container>
+            <img className="background-image-left" src={color} alt='ini'/>
 
         </section>
     )
