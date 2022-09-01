@@ -70,7 +70,7 @@ export const Banner = () => {
                     </Col>
                     <Col xs={12} md={6} xl={6}>
 
-                        <h1><img src={foto} style={{ width: "410px", height: "500px", borderRadius: "70%" }} alt="fotoProfil"></img></h1>
+                        <h1><img src={foto} style={{ width: "460px", height: "500px", borderRadius: "70%" }} alt="fotoProfil"></img></h1>
                         <h4><span className="wrap">{text}</span></h4>
 
                         <p className="intro mt-3 text-white">

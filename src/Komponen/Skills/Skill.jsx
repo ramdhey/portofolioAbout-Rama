@@ -4,17 +4,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import seratus from './image/100%.png'
-import nintyfif from './image/95.png'
-import ninty from './image/90.png'
+
+
 import egtifif from './image/85.png'
 import egti from './image/80.png'
 import svnfif from './image/75.png'
 import svn from './image/70.png'
 import sixfif from './image/65.png'
 import six from './image/60.png'
-import fif from './image/50.png'
-import fofif from './image/45.png'
+
 import color from './image/color-sharp.png'
 
 
