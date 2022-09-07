@@ -40,7 +40,7 @@ export const Skill = () => {
 
 
     return (
-        <section className="skill" id="skills">
+        <section className="skill" id="skills" style={{ backgroundColor: '#000000' }}>
             <Container>
                 <Row>
                     <Col xs={12} md={12} xl={12}>
@@ -90,7 +90,7 @@ export const Skill = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={color} alt='ini'/>
+            <img className="background-image-left" src={color} alt='ini' style={{ backgroundColor: '#000000' }} />
 
         </section>
     )
