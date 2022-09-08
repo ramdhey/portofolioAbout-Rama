@@ -1,51 +1,75 @@
 
 
 import { Container, Row, Col,Nav ,Tab} from "react-bootstrap"
-
-
-
-import projImage from './image/ini.jpg'
-import colorsharp from './image/color-sharp2.png'
 import { ProjectCard } from '../ProjectCard/ProjectCards';
+
+
+
+// import projImage from './image/ini.jpg'
+
+//Ngepet Run
+import ngepetrunhome from './image/home.jpeg'
+import ngepetrunplay from './image/satu.jpeg'
+import ngepetrunobs from './image/dua.jpeg'
+import ngepetrunobs2 from './image/tiga.jpeg'
+import modemanusia from './image/manusia.jpeg'
+import modemanusia2 from './image/manusia2.jpeg'
+
+
+//GPS NEWS
+import gps from './image/berita.png'
+import gps2 from './image/berita2.png'
+import gps3 from './image/beritasearch.png'
+
+
+//CRUD Todo List
+import crud from './image/crud.png'
+import crud2 from './image/crud2.png'
+import crud3 from './image/edit.png'
+import crud4 from './image/edit2.png'
+
+
+import colorsharp from './image/color-sharp2.png'
+
 
 
 
 export const Projects = () => {
     const tabone =[
         {
-            title : "Coba Satu",
-            description : "Test",
-            imgUrl : projImage,
+            title : "Home Page",
+            description : "Home page of the game Ngepet Run ",
+            imgUrl : ngepetrunhome,
 
         },
         {
-            title : "Coba Dua",
-            description : "Test",
-            imgUrl :  projImage,
+            title : "Game Play While in Piggy Mode",
+            description : "When the game starts, the player will default to using pig mode",
+            imgUrl :  ngepetrunplay,
 
         },
         {
-            title : "Coba Tiga",
-            description : "Test",
-            imgUrl : projImage,
+            title : "Game Play While in Piggy Mode",
+            description : "When playing using the Piggy mode, players can hit a ghost obstacle in the form of a genduruwo ghost , pocong and a Kuntilanak.",
+            imgUrl : ngepetrunobs,
 
         },
         {
-            title : "Coba Empat",
-            description : "Test",
-            imgUrl :  projImage,
+            title : "Game Play While in Piggy Mode",
+            description : "When the player plays using the piggy mode and meets citizens or humans on the track, the player will die, therefore the player must change to human mode when meeting another human",
+            imgUrl :  ngepetrunobs2,
 
         },
         {
-            title : "Coba Lima",
-            description : "Test",
-            imgUrl :  projImage,
+            title : "Game Play While in Human Mode",
+            description : "When it becomes human mode, and the player hits a ghost obstacle, the player will die",
+            imgUrl :  modemanusia,
 
         },
         {
-            title : "Coba Enam",
-            description : "Test",
-            imgUrl :  projImage,
+            title : "Game Play While in Human Mode",
+            description : "If in piggy mode we collect coins and will die if we meet other humans, in human mode players will be safe if they meet other citizens or humans and in human mode players can collect candles to turn back into piggy mode",
+            imgUrl :  modemanusia2,
 
         },
 
@@ -55,41 +79,24 @@ export const Projects = () => {
 
     const tabtwo =[
         {
-            title : "Coba Satu",
-            description : "Test",
-            imgUrl : projImage,
+            title : "GPS News website page",
+            description : "A website that displays news with headline news as default",
+            imgUrl : gps,
 
         },
         {
-            title : "Coba Dua",
-            description : "Test",
-            imgUrl :  projImage,
+            title : "GPS News website page",
+            description : "There are various news categories on the GPS News website page",
+            imgUrl : gps2,
 
         },
         {
-            title : "Coba Tiga",
-            description : "Test",
-            imgUrl : projImage,
+            title : "GPS News website page",
+            description : "In the search form, you can search for news by writing keywords or sentences related to the news.",
+            imgUrl : gps3,
 
         },
-        {
-            title : "Coba Empat",
-            description : "Test",
-            imgUrl :  projImage,
-
-        },
-        {
-            title : "Coba Lima",
-            description : "Test",
-            imgUrl :  projImage,
-
-        },
-        {
-            title : "Coba Enam",
-            description : "Test",
-            imgUrl :  projImage,
-
-        },
+        
 
 
     ];
@@ -97,41 +104,30 @@ export const Projects = () => {
 
     const tabthree =[
         {
-            title : "Coba Satu",
-            description : "Test",
-            imgUrl : projImage,
+            title : "To do List CRUD website page",
+            description : "The home page of the website to enter data",
+            imgUrl : crud,
 
         },
         {
-            title : "Coba Dua",
-            description : "Test",
-            imgUrl :  projImage,
+            title : "To do List CRUD website page",
+            description : "The results of the data that has been input, can be edited and also deleted",
+            imgUrl :  crud2,
 
         },
         {
-            title : "Coba Tiga",
-            description : "Test",
-            imgUrl : projImage,
+            title :"To do List CRUD website page",
+            description : "If it's edited then after it's finished click the update button so that the edited data can be update",
+            imgUrl : crud3,
 
         },
         {
-            title : "Coba Empat",
-            description : "Test",
-            imgUrl :  projImage,
+            title : "To do List CRUD website page",
+            description : "Display if it has been updated, and if you want to delete it, you can click the delete button",
+            imgUrl :  crud4,
 
         },
-        {
-            title : "Coba Lima",
-            description : "Test",
-            imgUrl :  projImage,
-
-        },
-        {
-            title : "Coba Enam",
-            description : "Test",
-            imgUrl :  projImage,
-
-        },
+        
 
 
     ];
@@ -144,21 +140,22 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col size={12}>
-                        <h2>My Projects</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h2 className="mb-5">My Projects</h2>
+                        {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
 
                         <Tab.Container id="projects-tabs" defaultActiveKey="satu">
 
                         <Nav variant="pills"className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="satu"> Satu </Nav.Link>
+                                <Nav.Link eventKey="satu"> Ngepet Run Game Project </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="dua"> Dua </Nav.Link>
+                                <Nav.Link eventKey="dua">  GPS News Webiste  </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="tiga" > Tiga </Nav.Link>
+                                <Nav.Link eventKey="tiga" > To do List CRUD Website</Nav.Link>
                             </Nav.Item>
+                            
 
                         </Nav>
 

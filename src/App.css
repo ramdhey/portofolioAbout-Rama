@@ -521,6 +521,89 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
+
+/* Kontak */
+
+.kontak {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 60px 0 200px 0;
+}
+.kontak img {
+  width: 92%;
+}
+.kontak h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+.kontak form input, .kontak form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.kontak form input:focus, .kontak form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.kontak form input::placeholder, .kontak form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.kontak form input:focus::placeholder, .kontak form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.kontak form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.kontak form button span {
+  z-index: 1;
+  position: relative;
+}
+.kontak form button:hover {
+  color: #fff;
+}
+.kontak form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.kontak form button:hover::before {
+  width: 100%;
+  box-shadow : 0px 0px 10px #fcfcfc !important;
+
+  background-color: #1b268a;
+}
+
+
+/* END Kontak */
+
+
+
+
 .App {
   text-align: center;
   background-color: #000000;
