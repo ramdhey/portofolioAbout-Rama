@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 import { Container, Row, Col } from 'react-bootstrap'
 import { CloudArrowDown } from "react-bootstrap-icons"
@@ -8,6 +10,7 @@ import Button from 'react-bootstrap/Button'
 
 import head from './image/head.png'
 import foto from './image/profile.jpg'
+
 
 
 export const Banner = () => {
@@ -56,7 +59,9 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
+                    
                     <Col xs={12} md={6} xl={6}>
+                    
                         <span className="tagline mb-5 text-white">
                             Welcome to Potofolio About Rama
 
@@ -65,13 +70,30 @@ export const Banner = () => {
                         <h2 className=" rama">{`Rama Dhea Yudhistira`}</h2>
                     </Col>
                     <Col xs={12} md={6} xl={6}>
-                        <img src={head} className="head" style={{ width: "600px", height: "350px" }} alt="head" />
+                    <TrackVisibility>
+                        {({ isVisible }) =>
+                            <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                            <img src={head} className="head" style={{ width: "600px", height: "350px" }} alt="head" />
+                            </div>}
+                    </TrackVisibility>
+                        
 
                     </Col>
                     <Col xs={12} md={6} xl={6}>
 
                         <h1><img src={foto} style={{ width: "460px", height: "500px", borderRadius: "70%" }} alt="fotoProfil"></img></h1>
-                        <h4><span className="wrap">{text}</span></h4>
+                        <TrackVisibility>
+                        {({isVisible})=>
+                            <div className={isVisible ? "animated__animated animate__fadeIn":""}>
+                            <h4><span className="wrap">{text}</span></h4>
+
+                        </div>
+
+                        }
+                            
+                       
+
+                        </TrackVisibility>
 
                         <p className="intro mt-3 text-white">
                             I am a student of Informatics Engineering at Pamulang University.
