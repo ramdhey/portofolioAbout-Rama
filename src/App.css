@@ -389,7 +389,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*END Skill */
 
-/* Project */
+/* Project & Certificate */
 .project {
   padding: 80px 0;
   position: relative;
@@ -516,7 +516,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-/* END Project */
+/* END Project & Certificate*/
+
+
+
 
 
 
@@ -601,6 +604,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* END Kontak */
 
+
+/* Footer */
+
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url('./image/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer img {
+  width: 26%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  
+  
+}
+
+
+
+/* END Footer */
 
 
 

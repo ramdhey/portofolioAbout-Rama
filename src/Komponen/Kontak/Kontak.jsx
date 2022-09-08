@@ -2,7 +2,8 @@ import React,{useState} from "react"
 import { Container } from 'react-bootstrap'
 import { Col,Row } from 'react-bootstrap'
 
-import gambarkontak from './image/contact-img.svg'
+// import gambarkontak from './image/contact-img.svg'
+import gambarkontakcoba from './image/clear.png'
 
 
 
@@ -53,7 +54,7 @@ export const Kontak = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
-                        <img src={gambarkontak} alt='kontak' />
+                        <img src={gambarkontakcoba} alt='kontak' />
                     </Col>
                     <Col md={6}>
                         <h2>Please, write here if there is a message for me</h2>

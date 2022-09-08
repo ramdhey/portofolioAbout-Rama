@@ -40,7 +40,7 @@ export const Skill = () => {
 
 
     return (
-        <section className="skill" id="skills" style={{ backgroundColor: '#000000' }}>
+        <section className="skill" id="skill" style={{ backgroundColor: '#000000' }}>
             <Container>
                 <Row>
                     <Col xs={12} md={12} xl={12}>

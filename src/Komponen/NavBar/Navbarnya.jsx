@@ -57,6 +57,7 @@ export const Navbarnya = () => {
                             <Nav.Link href="#skill" className={linkActive === 'skill' ? 'active navbar-link' : 'navbar-link'} onClick={() => onLinkActive('skill')} >SKILLS</Nav.Link>
                             <Nav.Link href="#project" className={linkActive === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onLinkActive('project')} >PROJECTS</Nav.Link>
                             <Nav.Link href="#certificate" className={linkActive === 'certificate' ? 'active navbar-link' : 'navbar-link'} onClick={() => onLinkActive('certificate')} >CERTIFICATE</Nav.Link>
+                            <Nav.Link href="#connect" className={linkActive === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onLinkActive('connect')} >CONTACT</Nav.Link>
                             
                         </Nav>
 
