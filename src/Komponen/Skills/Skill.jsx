@@ -53,6 +53,10 @@ export const Skill = () => {
                                     <h5 className="namaskill mt-3">React JS</h5>
                                 </div>
                                 <div className="itemnya  mt-3">
+                                    <img src={egti} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
+                                    <h5 className="namaskill mt-3">React Native</h5>
+                                </div>
+                                <div className="itemnya  mt-3">
                                     <img src={svnfif} style={{ width: "150px", height: "150px" }} alt='gambarnya' />
                                     <h5 className="namaskill mt-3">Node JS</h5>
                                 </div>
