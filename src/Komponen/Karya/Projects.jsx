@@ -29,12 +29,21 @@ import lan from './image/webbro9.png'
 import las from './image/webbro11.png'
 
 
-//CRUD Todo List
-import crud from './image/crud.png'
-import crud2 from './image/crud2.png'
-import crud3 from './image/edit.png'
-import crud4 from './image/edit2.png'
 
+
+//temanKumpul
+import tk1 from './image/Web-TemanKumpul/Login.png'
+import tk2 from "./image/Web-TemanKumpul/Regis1.png";
+import tk3 from "./image/Web-TemanKumpul/Regis2.png"
+import tk4 from "./image/Web-TemanKumpul/Dashboard.png"
+import tk5 from "./image/Web-TemanKumpul/Dashboard Dark.png";
+import tk6 from "./image/Web-TemanKumpul/mempost.png";
+import tk7 from "./image/Web-TemanKumpul/myPost.png";
+import tk8 from "./image/Web-TemanKumpul/Posts.png";
+import tk9 from "./image/Web-TemanKumpul/ProfilTeman.png";
+import tk10 from "./image/Web-TemanKumpul/isMobile.png";
+import tk11 from "./image/Web-TemanKumpul/isMobile2.png";
+import tk12 from "./image/Web-TemanKumpul/isMobile3.png";
 
 import colorsharp from './image/color-sharp2.png'
 
@@ -153,112 +162,148 @@ export const Projects = () => {
     ];
 
 
-    // const tabthree =[
-    //     {
-    //         title : "To do List CRUD website page",
-    //         description : "The home page of the website to enter data",
-    //         imgUrl : crud,
-
-    //     },
-    //     {
-    //         title : "To do List CRUD website page",
-    //         description : "The results of the data that has been input, can be edited and also deleted",
-    //         imgUrl :  crud2,
-
-    //     },
-    //     {
-    //         title :"To do List CRUD website page",
-    //         description : "If it's edited then after it's finished click the update button so that the edited data can be update",
-    //         imgUrl : crud3,
-
-    //     },
-    //     {
-    //         title : "To do List CRUD website page",
-    //         description : "Display if it has been updated, and if you want to delete it, you can click the delete button",
-    //         imgUrl :  crud4,
-
-    //     },
-        
-
-
-    // ];
+    const tabthree = [
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "The default display will be set to go directly to the login page, so that users who already have an account can immediately enter their account",
+        imgUrl: tk1,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "Registration page to do for users who don't have an account, if you can already access it by moving to the login page",
+        imgUrl: tk2,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "Registration page to do for users who don't have an account, if you can already access it by moving to the login page",
+        imgUrl: tk3,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "If the login is successful it will immediately go to your dashboard page, at the top there is a navbar in which there are dark and light mode features to set the display theme for each page, and at the bottom there is a column to post something, and see a list of existing posts",
+        imgUrl: tk4,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description: "Dashboard display when you use dark mode",
+        imgUrl: tk5,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "Post column to add moment posts that you have in the form of files, images or text",
+        imgUrl: tk6,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "If you have shared your moments through posts, the posts will appear like this",
+        imgUrl: tk7,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "The post display will later be made in the form of a list to make it easier for users to see it and give likes to each existing post",
+        imgUrl: tk8,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "Display if it has been updated, and if you want to delete it, you can click the delete button",
+        imgUrl: tk9,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "Because my website has a responsive screen size, so if it's used on a cellphone screen it will adjust automatically",
+        imgUrl: tk10,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "Because my website has a responsive screen size, so if it's used on a cellphone screen it will adjust automatically",
+        imgUrl: tk11,
+      },
+      {
+        title: "temanKumpul-Social Media Website",
+        description:
+          "Because my website has a responsive screen size, so if it's used on a cellphone screen it will adjust automatically",
+        imgUrl: tk12,
+      },
+    ];
     
-    return(
+    return (
+      <section className="project" id="project">
+        <Container>
+          <Row>
+            <Col size={12}>
+              <h2 className="mb-5">My Projects</h2>
+              {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
 
+              <Tab.Container id="projects-tabs" defaultActiveKey="satuc">
+                <Nav
+                  variant="pills"
+                  className="nav-pills mb-5 justify-content-center align-items-center"
+                  id="pills-tab"
+                >
+                  <Nav.Item>
+                    <Nav.Link eventKey="satuc">
+                      {" "}
+                      Ngepet Run Game Project{" "}
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="duac"> Web BrotherStore </Nav.Link>
+                  </Nav.Item>
 
+                  <Nav.Item>
+                    <Nav.Link eventKey="tigac">
+                      {" "}
+                      temanKumpul Web{" "}
+                    </Nav.Link>
+                  </Nav.Item>
+                  {/* <Nav.Item>
+                    <Nav.Link eventKey="tiga"> Web BrotherStore </Nav.Link>
+                  </Nav.Item> */}
+                </Nav>
 
-        <section className='project' id="project">
-            <Container>
-                <Row>
-                    <Col size={12}>
-                        <h2 className="mb-5">My Projects</h2>
-                        {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+                <Tab.Content>
+                  <Tab.Pane eventKey="satuc">
+                    <Row>
+                      {tabone.map((project, index) => {
+                        return <ProjectCard key={index} {...project} />;
+                      })}
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="duac">
+                    <Row>
+                      {tabtwo.map((project, index) => {
+                        return <ProjectCard key={index} {...project} />;
+                      })}
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="tigac">
+                    <Row>
+                      {tabthree.map((project, index) => {
+                        return <ProjectCard key={index} {...project} />;
+                      })}
+                    </Row>
+                  </Tab.Pane>
+                </Tab.Content>
+              </Tab.Container>
+            </Col>
+          </Row>
+        </Container>
 
-                        <Tab.Container id="projects-tabs" defaultActiveKey="satu">
-
-                        <Nav variant="pills"className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                            <Nav.Item>
-                                <Nav.Link eventKey="satu"> Ngepet Run Game Project </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="dua">  Web BrotherStore  </Nav.Link>
-                            </Nav.Item>
-                            
-                            
-
-                        </Nav>
-
-                        <Tab.Content>
-                            <Tab.Pane eventKey="satu">
-                                <Row>
-                                    {
-                                        tabone.map((project, index)=>{
-                                            return(
-                                                <ProjectCard 
-                                                key={index} 
-                                                {...project}/>
-                                            )
-                                        })
-                                    }
-                                </Row>
-
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="dua">
-                            <Row>
-                                    {
-                                        tabtwo.map((project, index)=>{
-                                            return(
-                                                <ProjectCard 
-                                                key={index} 
-                                                {...project}/>
-                                            )
-                                        })
-                                    }
-                                </Row>
-                            </Tab.Pane>
-                            {/* <Tab.Pane eventKey="tiga">
-                            <Row>
-                                    {
-                                        tabthree.map((project, index)=>{
-                                            return(
-                                                <ProjectCard 
-                                                key={index} 
-                                                {...project}/>
-                                            )
-                                        })
-                                    }
-                                </Row>
-                            </Tab.Pane> */}
-                        </Tab.Content>
-                        </Tab.Container>
-                    </Col>
-
-                </Row>
-
-            </Container>
-
-            <img className='background-image-right' src={colorsharp} alt='rightbcg'></img>
-            
-        </section>
-    )
+        <img
+          className="background-image-right"
+          src={colorsharp}
+          alt="rightbcg"
+        ></img>
+      </section>
+    );
 }
